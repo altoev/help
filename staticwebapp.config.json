@@ -11,6 +11,10 @@
     {
       "route": "/articles/pickup",
       "rewrite": "/articles/pickup.html"
+    },
+    {
+      "route": "/articles/parkinglot",
+      "rewrite": "/articles/parkinglot.html"
     }
   ]
 }
