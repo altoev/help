@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting to Our Parking Lot</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header .logo {
+            height: 40px;
+        }
+
+        header h1 {
+            margin: 10px 0 0;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* Layout */
+        main {
+            display: flex;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .sidebar {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .sidebar h3 {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #007bff;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            flex: 3;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .breadcrumb {
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .breadcrumb a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        h2, h3 {
+            color: #1a1a1a;
+        }
+
+        ol {
+            margin-left: 20px;
+            line-height: 1.6;
+        }
+
+        /* Image Styles */
+        .clickable-image {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .clickable-image:hover {
+            transform: scale(1.02);
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 8px;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<script src='https://chat-assets.frontapp.com/v1/chat.bundle.js'></script>
+<script>
+  window.FrontChat('init', {chatId: 'fd98255e37879f83dc8410e7bb47cf13', useDefaultLauncher: true});
+</script>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="Altoev Logo" class="logo">
+            </a>
+            <h1>Guide</h1>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <main>
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <h3>In this article</h3>
+            <ul>
+                <li><a href="#directions">Directions</a></li>
+                <li><a href="#map">Parking Lot Map</a></li>
+                <li><a href="#address">Address</a></li>
+                <li><a href="#need-assistance">Need Assistance?</a></li>
+            </ul>
+        </aside>
+
+        <!-- Content Section -->
+        <section class="content">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a> › Ongoing Reservations › Getting to Our Parking Lot
+            </div>
+
+            <h2>Getting to Our Parking Lot</h2>
+            <p>
+                We’re excited to help you get started on your journey. If you're arriving at the Jacksonville International Airport and need to find our parking lot, follow these simple directions to make your way there with ease.
+            </p>
+
+            <!-- Directions -->
+            <h3 id="directions">Directions</h3>
+            <p>To reach the Altoev parking lot from the airport, please follow these steps:</p>
+            <ol>
+                <li>As you face the rental car counters (such as Hertz, Enterprise, etc.), head all the way to the left until you reach the far left door. This door leads to the pre-arranged parking lot.</li>
+                <li>Walk up the ramp towards the car entrance and exit until you arrive at the <strong>"Security Booth"</strong> and the entrance/exit gate.</li>
+                <li>Continue walking past the gate and straight across the street towards the <strong>"Sheltair"</strong> sign.</li>
+                <li>Make your way up towards the <strong>"Sheltair"</strong> building.</li>
+                <li>Finally, head towards the back right side of the parking lot, as indicated in the image below.</li>
+            </ol>
+
+            <!-- Map Image -->
+            <h3 id="map">Parking Lot Map</h3>
+            <div>
+                <img src="../images/parkinglot.png" alt="Parking Lot Map" class="clickable-image" id="clickableImage">
+            </div>
+
+            <!-- Address -->
+            <h3 id="address">Address</h3>
+            <p>
+                If you need more assistance, please enter the address below into your desired "Maps" app and select the walking navigation. 
+                <strong>Be sure to select the walking navigation, not the driving. The driving will send you the long way.</strong>
+            </p>
+            <p><strong>14600 Whirlwind Avenue<br>Jacksonville, FL 32218</strong></p>
+
+            <!-- Need Assistance -->
+            <h3 id="need-assistance">Need Assistance?</h3>
+            <p>
+                We hope these directions help you find us easily. If you have any questions or need further assistance, feel free to reach out. Safe travels!
+            </p>
+        </section>
+    </main>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" id="modalClose">&times;</span>
+        <img id="modalImage" src="" alt="Expanded Map">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Altoev. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        const clickableImage = document.getElementById("clickableImage");
+        const imageModal = document.getElementById("imageModal");
+        const modalImage = document.getElementById("modalImage");
+        const modalClose = document.getElementById("modalClose");
+
+        clickableImage.onclick = () => {
+            modalImage.src = clickableImage.src;
+            imageModal.style.display = "flex";
+        };
+
+        modalClose.onclick = () => {
+            imageModal.style.display = "none";
+        };
+
+        window.onclick = (event) => {
+            if (event.target === imageModal) {
+                imageModal.style.display = "none";
+            }
+        };
+    </script>
+</body>
+</html>
