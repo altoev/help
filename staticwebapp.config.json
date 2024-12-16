@@ -3,6 +3,10 @@
     {
       "route": "/",
       "rewrite": "/index.html"
+    },
+    {
+      "route": "/articles/booking",
+      "rewrite": "/articles/booking.html"
     }
   ]
 }
