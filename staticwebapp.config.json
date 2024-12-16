@@ -19,6 +19,10 @@
     {
       "route": "/articles/roadside",
       "rewrite": "/articles/roadside.html"
+    },
+    {
+      "route": "/articles/dt",
+      "rewrite": "/articles/dt.html"
     }
   ]
 }
