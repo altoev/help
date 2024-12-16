@@ -7,6 +7,10 @@
     {
       "route": "/articles/booking",
       "rewrite": "/articles/booking.html"
+    },
+    {
+      "route": "/articles/pickup",
+      "rewrite": "/articles/pickup.html"
     }
   ]
 }
