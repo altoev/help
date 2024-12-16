@@ -27,6 +27,10 @@
     {
       "route": "/articles/dropoff",
       "rewrite": "/articles/dropoff.html"
+    },
+    {
+      "route": "/articles/ck",
+      "rewrite": "/articles/ck.html"
     }
   ]
 }
