@@ -23,6 +23,10 @@
     {
       "route": "/articles/dt",
       "rewrite": "/articles/dt.html"
+    },
+    {
+      "route": "/articles/dropoff",
+      "rewrite": "/articles/dropoff.html"
     }
   ]
 }
